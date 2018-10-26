@@ -5,7 +5,7 @@ import { doTest } from './redux/actions';
 class Header extends Component {
     render() {
         return (
-            <div>
+            <div onClick={this.props.doTest}>
                 <h1>Banner</h1>
                 {this.props.testBanner}
             </div>
